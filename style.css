@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html {
+    font-size: 10px;
+}
+#slider{
+    width: 100%;
+    height: 500px;
+}
+#wrapper{
+    position: relative;
+    margin: 50px auto;
+    width: 100%;
+    height: 100%;
+}
+#wrapper .content{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+#wrapper>.content>.imgs{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    top: 0;
+    width: 500%;           /*多留出一张图片的宽度！*/
+    height: 100%;
+    list-style: none;
+}
+#wrapper>.content>.imgs li{
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 20%;
+    height: 100%;
+}
+#wrapper>.content>.imgs>li img{
+    width: 100%;
+    height: 500px;
+}
+
+#wrapper>.content>.dots{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;
+    list-style: none;
+}
+#wrapper>.content>.dots li{
+    float: left;
+    width: 10px;
+    height: 10px;
+    text-align: center;
+    line-height: 10px;
+    border-radius: 50%; 
+    margin-left:10px ;
+    cursor: pointer;
+}
+
+li.active{
+    background-color:#f44336;
+}
+li.quiet{
+    background-color: white;
+}
+
+.btns{
+    display: none;
+}
+.btns span{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    margin-top: -25px;
+    line-height: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-family: Simsun;
+    font-size: 30px;
+    border: 1px solid #fff;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 50%;
+}
+.btns .left{
+    left: 15px;
+}
+.btns .right{
+    left: 100%;
+    margin-left: -70px;
+}
+
+.contentWrapper{
+    padding: 100px 150px;
+}
+
+.groupItemsHeader{
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    color: #21254a;
+    margin-bottom: 40px;
+}
+
+.groupItems{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.groupItem{
+    width: 45%;
+}
+
+.ShowImg{
+    margin-top: 50px;
+    width: 100%;
+}
