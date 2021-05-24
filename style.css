@@ -11,7 +11,7 @@ html {
 }
 #wrapper{
     position: relative;
-    margin: 50px auto;
+    margin: 0  auto 50px auto;
     width: 100%;
     height: 100%;
 }
@@ -27,7 +27,7 @@ html {
     padding: 0;
     left: 0;
     top: 0;
-    width: 500%;           /*多留出一张图片的宽度！*/
+    width: 800%;           /*多留出一张图片的宽度！*/
     height: 100%;
     list-style: none;
 }
@@ -35,7 +35,7 @@ html {
     float: left;
     margin: 0;
     padding: 0;
-    width: 20%;
+    width: 12.5%;
     height: 100%;
 }
 #wrapper>.content>.imgs>li img{
@@ -115,7 +115,45 @@ li.quiet{
     flex-wrap: wrap;
 }
 .groupItem{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
     width: 45%;
+    margin-bottom: 100px;
+}
+
+.groupItem img{
+    border-radius: 8px;
+    height: 375px;
+    width: 100%;
+}
+
+.groupItem img:hover{
+    border-radius: 8px;
+    height: 375px;
+    width: 100%;
+    transform: scale(1.01);
+}
+
+.groupItem .itemName{
+    position: absolute;
+    bottom: -30px;
+    background-color: #fff;
+    font-size: 20px;
+    color: #f84949;
+    box-shadow:0 2px 4px rgba(0, 0, 0, .3);
+    padding: 15px 70px;
+}
+
+.groupItem:hover .itemName{
+    position: absolute;
+    bottom: -30px;
+    background-color: #f84949;
+    font-size: 20px;
+    color: #fff;
+    box-shadow:0 2px 4px rgba(0, 0, 0, .3);
+    padding: 15px 70px;
 }
 
 .ShowImg{
